@@ -1,4 +1,4 @@
-## PFRestaurante
+## El Ocañerito
 <p align="left">
   <img height="200" src="./logo.png" />
 </p>
@@ -55,7 +55,7 @@ El contenido de `client` fue creado usando: Create React App.
 
 • Juan Diego Celis
 
-• Anderson De Jesus Escorcia Hernandez
+• Anderson Escorcia
 
 
 ## Problema u oportunidad que resuelve:
