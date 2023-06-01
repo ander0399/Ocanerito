@@ -295,8 +295,8 @@
         {
             "id": 23,
             "name": "Papas Fritas",
-            "photo": "https://www.recetas360.com/wp-content/uploads/2019/07/como-hacer-papas-fritas-de-mcdonals.jpg",
-            "summary": "La milanesa es un filete, normalmente de carne vacuna, rebozado, que se cocina frito o al horno.",
+            "photo": "https://imag.bonviveur.com/patatas-fritas-en-freidora-de-aire.webp",
+            "summary": "Se preparan cortándose en forma de bastones y friéndolas en aceite caliente hasta que queden doradas, crujientes para luego retirarlas del aceite y luego sazonarlas con sal.",
             "price": 260,
             "stock": true,
             "drinkable": false,

@@ -12,14 +12,14 @@ router.post('/', async (req, res) =>{
 
     const payment = await stripe.paymentIntents.create({
         amount,
-        currency: "ARS",
-        description: "Reserva en PFRestaurant",
+        currency: "USD",
+        description: "Reserva en El Ocañerito",
         payment_method: id,
         confirm: true
     })
 
     //console.log(payment)
-    console.log("pagadoo")
+    //console.log("pagadoo")
         res.status(200).send({message: "Successfull payment"})
         
     } catch (error) {

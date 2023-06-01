@@ -35,7 +35,7 @@ const validationForm = (input) => {
     return errors
 };
 
-const stripePromise = loadStripe("pk_test_51LkeM7HwicqFBY9CPHk3MavK9EF4OJ9ioOHqFe7qkgcUkFdIm5cXzJQSfCqpQui3wfeCsYRCzVL40sijRPLVXYa000iIVjrtba")
+const stripePromise = loadStripe("pk_test_51NEEDFAYKIcgRfgMv6CEuQxh6twmnkZ223ayYmO4neyvedGTpcf2nTEo0pJANYHQAzk9clm1qFNKRVEte4z7QBjk00wWwB2c93")
 
 const CheckoutForm = () => {
     const fecha=new Date()
@@ -153,6 +153,7 @@ console.log(input)
                 amount: input.price*100 // lo obtiene en centavos
               });
               elements.getElement(CardElement).clear();
+              console.log(data.data.message);
               if (data.data.message === "Successfull payment"){
                 swal("Pago aceptado", "Tu reserva fue registrada con éxito", "success").then(() => {
                     dispatch(createReservation(input)).then((a) => {
