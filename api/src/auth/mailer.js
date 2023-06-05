@@ -37,7 +37,7 @@ const mail_rover = async (callback) => {
 const sendEmail = (receptor, subject, message, type) => {
     mail_rover(function (transporter) {
         const mailOptions = {
-            from: 'PFRestaurante <pfrestaurante07@gmail.com>',
+            from: 'El Ocañerito <infinityescorcia@gmail.com>',
             to: receptor,
             subject: subject,
             text: message

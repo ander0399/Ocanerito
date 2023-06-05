@@ -82,11 +82,11 @@ router.post('/', async (req, res) => {
             admin: admin
         })
         if (usser) {
-            /*sendEmail(
+            sendEmail(
                 email,
                 '¡Gracias por registrarte en El Ocañerito!',
                 `Ahora que formas parte de la familia, tu experiencia mejorara drásticamente:\n\xA0• Podrás realizar reservas dentro de nuestro establecimiento.\n\xA0• Hacer valoraciones de las comidas y bebidas que tenemos a disposición.\n\xA0\n\xA0\n\xA0Esperamos que disfrutes tu estadía en nuestra página.`,'welcome');
-            res.status(200).json("El usuario ha sido creado correctamente");*/
+            res.status(200).json("El usuario ha sido creado correctamente");
         }
         else res.status(403).json("El usuario no se ha creado");
     } catch (error) {
@@ -122,11 +122,11 @@ router.post('/google', async (req, res) => {
                     googleId: googleId,
                 })
                 const jwtToken = jwt.sign(JSON.stringify({ id: usser.id, email: usser.email, googleId: usser.googleId, admin: usser.admin }), process.env.JWT_SECRET);
-               /* sendEmail(
+               sendEmail(
                     usser.email,
                     '¡Gracias por registrarte en El Ocañerito!',
                     `Ahora que formas parte de la familia, tu experiencia mejorara drásticamente:\n\xA0• Podrás realizar reservas dentro de nuestro establecimiento.\n\xA0• Hacer valoraciones de las comidas y bebidas que tenemos a disposición.\n\xA0\n\xA0Tu contraseña temporal es: ${password}\n\xA0\n\xA0Esperamos que disfrutes tu estadía en nuestra página.`,'welcome');
-                return res.send({ session: jwtToken, photo: usser.photo, name: usser.user }); */
+                return res.send({ session: jwtToken, photo: usser.photo, name: usser.user }); 
             }
         }
         const jwtToken = jwt.sign(JSON.stringify({ id: userEmail.id, email: userEmail.email, googleId: userEmail.googleId, admin: userEmail.admin }), process.env.JWT_SECRET);
