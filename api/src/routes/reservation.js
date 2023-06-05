@@ -19,7 +19,7 @@ const getReservation=async()=>{
             model:Table
         }]
     })
-    reservas.map(r=>{
+    /*reservas.map(r=>{
         const dia = r.dataValues.date.slice(8,10);
         const mes = r.dataValues.date.slice(5,7);
         const año = r.dataValues.date.slice(0,4);
@@ -44,7 +44,7 @@ const getReservation=async()=>{
                 }
             })
         }
-    })
+    })*/
     return reservas
 }
 
