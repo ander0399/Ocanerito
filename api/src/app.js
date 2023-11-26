@@ -11,12 +11,11 @@ const http = require("http");
 
 const { Message } = require("./db.js");
 
-// const cookieSession = require('cookie-session');
 
 const login = require("./routes/login");
 const users = require("./routes/users");
 const reservation = require("./routes/reservation");
-// const auth = require("./routes/auth");
+
 const feedbacks = require("./routes/feedbacks");
 const table = require("./routes/table");
 
@@ -73,7 +72,7 @@ server.use(passport.session());
 server.use("/table", table);
 server.use("/foods", foods);
 server.use("/menus", menus);
-// server.use("/auth", auth);
+
 server.use("/users", users);
 server.use("/reservation", reservation);
 server.use("/login", login);
