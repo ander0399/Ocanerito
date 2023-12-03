@@ -35,7 +35,7 @@ const validationForm = (input) => {
     return errors
 };
 
-const stripePromise = loadStripe("pk_test_51NEEDFAYKIcgRfgMv6CEuQxh6twmnkZ223ayYmO4neyvedGTpcf2nTEo0pJANYHQAzk9clm1qFNKRVEte4z7QBjk00wWwB2c93")
+const stripePromise = loadStripe("pk_test_51NCzz7INm7an4ntwPHcf9n2gL0guIT65LrAxeMaJWBENDuHrCTBbD4R2slvFZQ1YQfyGsd1KjKIye1W95J5wPteO00S8zlRMEz")
 
 const CheckoutForm = () => {
     const fecha=new Date()
