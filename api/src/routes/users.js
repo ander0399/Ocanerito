@@ -174,7 +174,7 @@ router.put('/', isAdmin, async (req, res) => {
     const { id, admin, erased } = req.body;
     try {
         const user = await User.findByPk(id);
-        if (user) {
+        if (user && id != 1 && user.user != "admin") {
             await User.update({
                 admin: admin,
                 erased: erased
